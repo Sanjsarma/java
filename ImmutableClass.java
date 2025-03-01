@@ -18,6 +18,7 @@ final class ImmutableClass {
         return name;
     }
 
+    // return a copy so that the value cannot be changed at all.
     public List<Object> getList() {
         return new ArrayList<>(list);
     }
