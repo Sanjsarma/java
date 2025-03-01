@@ -30,5 +30,24 @@ public class MainMethod {
         Audi a = new Audi(10);
         a.pressDualBreakSystem();
         a.pressClutch();
+
+        // creating instance of static nested class.
+        // obj of outer nested class is not required.
+        StaticNestedEg.NestedClass nc = new StaticNestedEg.NestedClass();
+        nc.print();
+
+        // calling non static inner class
+        // obj of outer class is required.
+        InnerClassEg objEg = new InnerClassEg();
+        InnerClassEg.InnerClass eg = objEg.new InnerClass();
+        eg.print();
+
+        // local inner class.
+        LocalInnerClassEg ob = new LocalInnerClassEg();
+        ob.display();
+
+        InnerClassInheritance objj = new InnerClassInheritance();
+        InnerClassInheritance.InnerClass2 objj1 = objj.new InnerClass2();
+        objj1.display();
     }
 }
