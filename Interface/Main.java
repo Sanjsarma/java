@@ -6,5 +6,6 @@ public class Main {
        Bird henObj = new Hen();
        birdObj.fly();
        henObj.fly();
+
     }
 }
