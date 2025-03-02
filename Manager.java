@@ -1,3 +1,4 @@
+@MyCustomAnnotation(name = "Sanjana")
 public class Manager extends Person {
     public Manager() {
         //there is a hidden super() here.
