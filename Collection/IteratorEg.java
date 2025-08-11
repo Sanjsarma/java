@@ -13,6 +13,7 @@ public class IteratorEg {
 
         Iterator<Integer> iterator = values.iterator();
 
+        System.out.println("printing values..");
         while (iterator.hasNext()) {
             int val = iterator.next();
             System.out.println(val);
@@ -21,8 +22,15 @@ public class IteratorEg {
             }
         }
 
+        // using for each loop
+        System.out.println("using for each loop");
         for (int val : values) {
             System.out.println(val);
         }
+
+        // using for each method -- using lambda expression.
+        System.out.println("using for each method");
+        values.forEach((Integer val) -> System.out.println(val));
+
     }
 }
